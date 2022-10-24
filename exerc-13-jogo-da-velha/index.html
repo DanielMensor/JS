@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer></script>
+    <title>Jogo da Velha</title>
+    
+    <!-- script app -->
+    <script src="./index.js" defer></script>
+
+    <!-- css page -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body class="container-fluid bg-dark text-danger">
+    <div class="pt-3">
+        <h1 class="text-center" id="title">Jogo da Velha</h1>
+    
+        <header>
+            <div>
+                <label for="jogador1">Jogador 1</label>
+                    <input type="name" id="jogador1" name="jogador1" class="bg-secondary text-center">
+            </div>
+    
+            <div>
+                <label for="jogador2">Jogador 2</label>
+                <input type="text" id="jogador2" name="jogador2" class="bg-secondary text-center">
+            </div>
+        </header>
+        <button class="btn btn-success btn-play" onclick="startGame()">Começar/Reeniciar jogo</button>
+        <p class="text-center pt-2">Vez do Jogador: </p>
+        <p class="player-turn text-center" id="player-turn"></p>
+    </div>
+
+    <main class="container-fluid">
+        <div class="row">
+            <div class="space space-1 col-4 text-center" data-value="1"><p></p></div>
+            <div class="space space-2 col-4 text-center" data-value="2"></div>
+            <div class="space space-3 col-4 text-center" data-value="3"></div>
+        </div>
+        <div class="row">
+            <div class="space space-4 col-4 text-center" data-value="4"></div>
+            <div class="space space-5 col-4 text-center" data-value="5"></div>
+            <div class="space space-6 col-4 text-center" data-value="6"></div>
+        </div>
+        <div class="row">
+            <div class="space space-7 col-4 text-center" data-value="7"></div>
+            <div class="space space-8 col-4 text-center" data-value="8"></div>
+            <div class="space space-9 col-4 text-center" data-value="9"></div>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="score">
+            <div>
+                <p>Jogador 1 </p><p id="score1">0</p>
+            </div>
+            <div>
+                <p>Jogador 2</p><p id="score2">0</p>
+            </div>
+        </div>
+        <section>
+            <button class="btn btn-danger" onclick="restartScore()">Reeniciar pontuação</button>
+    
+            <div>
+                <p>Created by Daniel Mensor </p>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>

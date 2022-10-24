@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height:100vh;
+}
+
+.branco{
+    color: white;
+}
+.preto{
+    color: black;
+}
+
+
+
+.container00{
+    
+    width: 710px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+
+#input {
+    height: 48px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: end;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    padding-right: 5px;
+}
+
+.keys{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.keys button{
+    margin-top: 5px ;
+    height: 64px;
+    width: 159px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 48px;
+    
+}
+
+.copy{
+    width: 20%;
+    border:none;
+    background-color: transparent;
+    
+}
+
+.result{
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    border-left: 2px solid gray;
+    height: 48px;
+    color: green;
+    text-align: end;
+    font-size: 36px;
+    
+}
+
+.success{
+    color: green;
+}
+
+.error{
+    background-color: red;
+    color: white;
+}
+
+@media (max-width:720px) {
+    .keys{
+        gap: 10px;
+    }
+
+    .keys button{
+        width: 22%;
+    }
+
+    .container00{
+        width: 95%;
+    }
+}
